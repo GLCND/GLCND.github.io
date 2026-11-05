@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我爱去图书馆 · 我反复听的七种声音</title>
+<meta name="description" content="一个关于房东的猫、草东没有派对、赵雷、孙燕姿、痛仰乐队、逃跑计划、万能青年旅店的私人音乐收藏页。">
+<link rel="stylesheet" href="styles.css?v=20261105c">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<span id="top" class="top-anchor" aria-hidden="true"></span>
+
+<header class="site-header">
+  <a class="logo" href="#top">
+    <span class="logo-mark">我爱去图书馆</span>
+    <span class="logo-en">LIBRARY DAYS<br><i>PRIVATE COLLECTION</i></span>
+  </a>
+  <nav class="nav">
+    <a href="#about">序言</a>
+    <a href="#artists">音乐人</a>
+    <a href="#playlist">歌单</a>
+    <button class="btn-random" id="randomBtn" type="button"><span class="dot"></span> 随机一首</button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-bg" id="heroBg" role="img" aria-label="当前主题的主视觉插画"></div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="hero-kicker" id="heroKicker"><span class="kicker-line"></span> MISERABLE FAITH · 哪吒 / 愿爱无忧</p>
+      <h1 class="hero-title"><span>我反复听的</span><span class="accent">七种声音</span></h1>
+      <p class="hero-en">SEVEN VOICES, ONE PRIVATE PLAYLIST</p>
+      <p class="hero-desc" id="heroDesc">从武汉的校园民谣，到华北平原的小号；<br>从哪吒脚下的风火轮，到夜空里最亮的那颗星。<br>这些是我耳机里住了很久的人。</p>
+      <div class="hero-actions">
+        <a href="#artists" class="btn btn-solid">看看他们 <span>↓</span></a>
+        <a href="#playlist" class="btn btn-ghost">直接翻歌单</a>
+      </div>
+    </div>
+    <div class="hero-vertical" id="heroVertical" aria-hidden="true">痛仰乐队 · 哪吒</div>
+    <div class="hero-foot">
+      <span class="scroll-hint"><i></i> 向下滚动</span>
+      <span class="hero-count" id="heroCount">NO.05 / 07</span>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>愿爱无忧 ✳ 云烟成雨 ✳ 大风吹 ✳ 成都 ✳ 逆光 ✳ 夜空中最亮的星 ✳ 杀死那个石家庄人 ✳ 秦皇岛 ✳&nbsp;</span>
+      <span>愿爱无忧 ✳ 云烟成雨 ✳ 大风吹 ✳ 成都 ✳ 逆光 ✳ 夜空中最亮的星 ✳ 杀死那个石家庄人 ✳ 秦皇岛 ✳&nbsp;</span>
+      <span>愿爱无忧 ✳ 云烟成雨 ✳ 大风吹 ✳ 成都 ✳ 逆光 ✳ 夜空中最亮的星 ✳ 杀死那个石家庄人 ✳ 秦皇岛 ✳&nbsp;</span>
+    </div>
+  </div>
+
+  <section class="intro" id="about">
+    <div class="section-label">00 / 序言</div>
+    <div class="intro-grid">
+      <h2 class="section-title reveal">有些歌<br>不是用来听的，<br><em>是用来回去的。</em></h2>
+      <div class="intro-body reveal">
+        <p>七组音乐人，横跨民谣、摇滚与华语流行。有的把日子唱得很轻，有的把时代唱得很重；有的陪我坐过末班公交，有的在凌晨两点替我把情绪喊出来。</p>
+        <p>这个页面没有排名，也不打算客观。点下面任意一张卡片，整页就会换成属于他的颜色与画面——默认停在那只不肯低头的哪吒身上。</p>
+        <div class="stats">
+          <div class="stat"><b>07</b><span>组音乐人</span></div>
+          <div class="stat"><b>10</b><span>首私藏</span></div>
+          <div class="stat"><b>∞</b><span>次循环</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="artists" id="artists">
+    <div class="artists-head">
+      <div>
+        <div class="section-label light">01 / 音乐人</div>
+        <h2 class="section-title light">七组，七种心跳</h2>
+      </div>
+      <p class="artists-note">点卡片换掉整站配色与首屏画面，点「资料」看详情。<span>↘</span></p>
+    </div>
+    <div class="theme-bar" id="themeBar">
+      <div class="theme-bar-left">
+        <span class="theme-bar-label">当 前 主 题</span>
+        <strong class="theme-bar-name" id="themeName">痛仰乐队</strong>
+        <span class="theme-bar-album" id="themeAlbum">《不要停止我的音乐》色调 · 哪吒图腾</span>
+      </div>
+      <button class="theme-reset" id="themeReset" type="button" hidden>恢复默认 · 哪吒 ↺</button>
+    </div>
+    <div class="artist-grid" id="artistGrid"></div>
+  </section>
+
+  <section class="playlist" id="playlist">
+    <div class="section-label">02 / 歌单</div>
+    <div class="playlist-head">
+      <h2 class="section-title reveal">如果只能留十首</h2>
+      <p class="reveal">点任意一首，留在本页直接播放 ▶</p>
+    </div>
+    <ol class="track-list" id="trackList"></ol>
+    <p class="playlist-foot">＊ 点击曲目会在本页播放，不会跳转。音源优先读取 <code>assets/audio/</code> 下的本地文件（01.mp3 ~ 10.mp3，可来自任意平台），其次使用公开可播放的试听直链；受版权限制无法直链的曲目会自动切换为官方内嵌播放器，仍在本页收听。本站不托管任何音频，歌曲版权归原权利人所有。</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-big">愿你我，<span>愿爱无忧。</span></div>
+  <div class="footer-bottom">
+    <p>我爱去图书馆 · 一个还在反复修改的私人音乐页<br>主视觉中《吉姆餐厅》为专辑封面、房东的猫为官方宣传照展示，其余为向各音乐人代表作品致敬的原创风格化插画；图片与歌曲版权归原权利人所有</p>
+    <a href="#top" class="to-top">回到顶部 ↑</a>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay" aria-hidden="true">
+  <div class="overlay-panel" role="dialog" aria-modal="true" aria-labelledby="detailName">
+    <button class="overlay-close" id="overlayClose" type="button" aria-label="关闭">✕</button>
+    <div class="overlay-body" id="overlayBody"></div>
+  </div>
+</div>
+
+<!-- 站内播放器：点击歌单曲目后固定在底部，不跳转页面 -->
+<div class="player-bar" id="playerBar" role="region" aria-label="站内播放器" hidden>
+  <audio id="audioEl" preload="metadata"></audio>
+  <div class="pb-main">
+    <div class="pb-meta">
+      <span class="pb-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <div class="pb-text">
+        <strong class="pb-title" id="pbTitle">—</strong>
+        <span class="pb-sub" id="pbSub">—</span>
+      </div>
+    </div>
+    <div class="pb-center">
+      <div class="pb-buttons">
+        <button class="pb-btn" id="pbPrev" type="button" aria-label="上一首">⏮</button>
+        <button class="pb-btn pb-play" id="pbToggle" type="button" aria-label="播放或暂停">▶</button>
+        <button class="pb-btn" id="pbNext" type="button" aria-label="下一首">⏭</button>
+      </div>
+      <div class="pb-seek">
+        <span id="pbTime">0:00</span>
+        <input type="range" id="pbSeek" min="0" max="1000" value="0" aria-label="播放进度">
+        <span id="pbDur">0:00</span>
+      </div>
+    </div>
+    <div class="pb-side">
+      <label class="pb-vol"><span aria-hidden="true">♪</span><input type="range" id="pbVol" min="0" max="1" step="0.05" value="0.8" aria-label="音量"></label>
+      <button class="pb-btn pb-official" id="pbOfficial" type="button" title="切换为官方内嵌播放器听原版">官方版</button>
+      <button class="pb-btn" id="pbClose" type="button" aria-label="关闭播放器">✕</button>
+    </div>
+  </div>
+  <div class="pb-embed" id="pbEmbed" hidden>
+    <iframe id="pbFrame" title="官方内嵌播放器" allow="autoplay; encrypted-media" referrerpolicy="no-referrer"></iframe>
+    <p class="pb-tip" id="pbTip"></p>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="artists-data.js?v=20261105c"></script>
+<script src="script.js?v=20261105c"></script>
+</body>
+</html>

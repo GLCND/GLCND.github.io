@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TA 的歌 · 我爱去图书馆</title>
+<meta name="description" content="我爱去图书馆 — 歌手代表歌曲清单。">
+<link rel="stylesheet" href="styles.css?v=20261105c">
+</head>
+<body class="artist-page">
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a class="logo" href="index.html">
+    <span class="logo-mark">我爱去图书馆</span>
+    <span class="logo-en">LIBRARY DAYS<br><i>PRIVATE COLLECTION</i></span>
+  </a>
+  <nav class="nav">
+    <a href="index.html#artists">← 返回音乐人</a>
+    <a href="index.html#playlist">首页歌单</a>
+  </nav>
+</header>
+
+<main>
+  <section class="ap-hero">
+    <div class="ap-hero-bg" id="apHeroBg" role="img" aria-label="歌手主题主视觉"></div>
+    <div class="ap-hero-shade" aria-hidden="true"></div>
+    <div class="ap-hero-inner">
+      <p class="ap-kicker" id="apKicker"></p>
+      <h1 class="ap-name" id="apName"></h1>
+      <p class="ap-en" id="apEn"></p>
+      <p class="ap-meta" id="apMeta"></p>
+      <p class="ap-tagline" id="apTagline"></p>
+      <div class="ap-hero-actions">
+        <a class="btn btn-solid" href="#songs">听 TA 的歌 <span>↓</span></a>
+        <a class="btn btn-ghost" href="index.html" id="apBack">← 回首页</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="ap-songs" id="songs">
+    <div class="section-label" id="apLabel">01 / TA 的歌</div>
+    <h2 class="section-title">这些歌，<em>先听这些</em></h2>
+    <p class="ap-hint" id="apHint"></p>
+    <ol class="ap-list" id="apList"></ol>
+    <p class="ap-foot">＊ 初版：点歌名会在新标签打开网易云音乐搜索收听，本站不托管任何音频，歌曲版权归原权利人所有。后续可改成和首页歌单一样在站内直接播放。</p>
+  </section>
+
+  <nav class="ap-others" id="apOthers" aria-label="切换其它歌手"></nav>
+</main>
+
+<footer class="footer">
+  <div class="footer-big">愿你我，<span>愿爱无忧。</span></div>
+  <div class="footer-bottom">
+    <p>我爱去图书馆 · 一个还在反复修改的私人音乐页<br>图片与歌曲版权归原权利人所有</p>
+    <a href="index.html" class="to-top">回到首页 ↑</a>
+  </div>
+</footer>
+
+<script src="artists-data.js?v=20261105c"></script>
+<script src="artist.js?v=20261105c"></script>
+</body>
+</html>
